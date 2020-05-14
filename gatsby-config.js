@@ -7,6 +7,19 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `cambay\:400,700`,
+          `arvo\:400,700`,
+          `ubuntu mono\:400,700`,
+          `raleway\:400`,
+          `teko\:400`,
+        ],
+        display: 'swap',
+      },
+    },
+    {
       resolve: "gatsby-source-graphql",
       options: {
         // This type will contain remote schema Query type

@@ -3,11 +3,15 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Maindiv,StyledShow } from "../components/styles"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Pokemon Fans" />
-    <Link to="/showpokemons/">show</Link>
+    <Maindiv>
+      <h1>Explore universe of Pokemons!</h1>
+      <StyledShow to="/showpokemons/">show</StyledShow>
+    </Maindiv>
   </Layout>
 )
 
